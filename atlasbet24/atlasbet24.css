@@ -1,12 +1,7 @@
-
-
 [data-mj="root-layout"] [data-mj="content-wrapper"] {
   max-width: none !important;
   width: 100% !important;
 }
-
-
-
 
 [data-mj="header-special-button"] {
   position: relative !important;
@@ -24,8 +19,6 @@
   transition: all 0.3s ease !important;
 }
 
-
-
 [data-mj="header-special-button"]:hover {
   transform: scale(1.06) !important;
   box-shadow:
@@ -33,7 +26,6 @@
     0 0 28px rgba(255, 140, 0, 0.9),
     0 0 55px rgba(255, 140, 0, 0.75) !important;
 }
-
 
 
 @keyframes atlasPromoGlow {
@@ -52,8 +44,6 @@
   }
 }
 
-
-
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] {
   position: relative !important;
   border: 2px solid #00bfff !important;
@@ -68,8 +58,6 @@
   transition: all 0.3s ease-in-out !important;
 }
 
-
-
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover {
   transform: translateY(-2px) scale(1.02) !important;
   border-color: #00eaff !important;
@@ -79,8 +67,6 @@
     0 0 45px rgba(0, 234, 255, 0.65),
     inset 0 0 16px rgba(0, 234, 255, 0.45) !important;
 }
-
-
 
 @keyframes atlasNeonPulse {
   from {
