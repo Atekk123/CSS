@@ -191,15 +191,48 @@
 }
 
 
-/* AtlasBet Logo Size + Gold Glow */
+/* Logo Bigger + Light White/Gold Glow */
 
 [data-mj="logo"] img {
-  width: 145px !important;
+  width: 155px !important;
   height: auto !important;
   max-height: none !important;
+
   filter:
-    drop-shadow(0 0 6px rgba(255, 204, 0, 0.9))
-    drop-shadow(0 0 14px rgba(255, 170, 0, 0.75))
-    drop-shadow(0 0 26px rgba(255, 140, 0, 0.55)) !important;
+    drop-shadow(0 0 4px rgba(255, 255, 255, 0.75))
+    drop-shadow(0 0 10px rgba(255, 230, 150, 0.55))
+    drop-shadow(0 0 18px rgba(255, 190, 40, 0.35)) !important;
+
   transition: all 0.3s ease !important;
+}
+
+/* Align logo and header buttons on the same line */
+
+[data-mj="header"],
+[data-mj="header-content"],
+[data-mj="header-left"],
+[data-mj="header-right"],
+[data-mj="logo"] {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Fix logo vertical spacing */
+
+[data-mj="logo"] {
+  line-height: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Keep right side buttons centered vertically */
+
+[data-mj="header-special-button"],
+[data-mj="header-login-button"],
+[data-mj="header-register-button"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
