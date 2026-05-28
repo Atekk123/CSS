@@ -1,4 +1,4 @@
-/* AtlasBet24 Full Width Content Wrapper */
+
 
 [data-mj="root-layout"] [data-mj="content-wrapper"] {
   max-width: none !important;
@@ -6,7 +6,7 @@
 }
 
 
-/* AtlasBet24 Promotion Button Glow */
+
 
 [data-mj="header-special-button"] {
   position: relative !important;
@@ -24,7 +24,7 @@
   transition: all 0.3s ease !important;
 }
 
-/* Promotion Button Hover Effect */
+
 
 [data-mj="header-special-button"]:hover {
   transform: scale(1.06) !important;
@@ -34,7 +34,7 @@
     0 0 55px rgba(255, 140, 0, 0.75) !important;
 }
 
-/* Promotion Button Glow Animation */
+
 
 @keyframes atlasPromoGlow {
   from {
@@ -53,7 +53,6 @@
 }
 
 
-/* AtlasBet24 Animated Neon Border Glow - Category Cards */
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] {
   position: relative !important;
@@ -69,7 +68,7 @@
   transition: all 0.3s ease-in-out !important;
 }
 
-/* Category Cards Hover Effect */
+
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover {
   transform: translateY(-2px) scale(1.02) !important;
@@ -81,7 +80,7 @@
     inset 0 0 16px rgba(0, 234, 255, 0.45) !important;
 }
 
-/* Category Cards Neon Animation */
+
 
 @keyframes atlasNeonPulse {
   from {
