@@ -57,6 +57,7 @@
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] {
   position: relative !important;
+  background: transparent !important;
   border: 2px solid transparent !important;
   border-radius: 8px !important;
   overflow: hidden !important;
@@ -69,10 +70,17 @@
   transition: all 0.3s ease-in-out !important;
 }
 
+/* Remove inner background/fill if the card has child layers */
+
+[data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] * {
+  background-color: transparent !important;
+}
+
 /* Category Card Hover Effect */
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover {
   transform: translateY(-2px) scale(1.02) !important;
+  background: transparent !important;
   border-color: transparent !important;
   box-shadow:
     0 0 10px rgba(0, 234, 255, 1),
