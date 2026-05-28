@@ -24,7 +24,6 @@
   transition: all 0.3s ease !important;
 }
 
-
 /* Promotion Button Hover Effect */
 
 [data-mj="header-special-button"]:hover {
@@ -34,7 +33,6 @@
     0 0 28px rgba(255, 140, 0, 0.9),
     0 0 55px rgba(255, 140, 0, 0.75) !important;
 }
-
 
 /* Promotion Button Glow Animation */
 
@@ -71,8 +69,7 @@
   transition: all 0.3s ease-in-out !important;
 }
 
-
-/* Category Cards Hover Effect */
+/* Category Card Hover Effect */
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover {
   transform: translateY(-2px) scale(1.02) !important;
@@ -80,12 +77,11 @@
   box-shadow:
     0 0 10px rgba(0, 234, 255, 1),
     0 0 24px rgba(0, 234, 255, 0.9),
-    0 0 48px rgba(0, 234, 255, 0.65),
+    0 0 45px rgba(0, 234, 255, 0.65),
     inset 0 0 16px rgba(0, 234, 255, 0.45) !important;
 }
 
-
-/* Category Cards Neon Pulse Animation */
+/* Category Card Neon Animation */
 
 @keyframes atlasNeonPulse {
   from {
