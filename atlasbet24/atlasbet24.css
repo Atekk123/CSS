@@ -200,7 +200,7 @@
 }
 }
 
-/* Move logo up to align with header buttons */
-[data-mj="logo"] img {
-  transform: translateY(-6px) !important;
+[data-mj="header-left"] {
+  display: flex !important;
+  align-items: center !important;
 }
