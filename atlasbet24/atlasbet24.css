@@ -101,18 +101,16 @@
 }
 
 /* Test */
-/* Modern Whatsapp Support Section - Clean Version */
+/* Premium Dark Neon Whatsapp Section */
 
 [data-mj="widget-info-panel"] {
   margin: 32px 16px 24px !important;
   border-radius: 24px !important;
   overflow: hidden !important;
   position: relative !important;
-
-  background: #1b242d !important;
-
+  background:
+    linear-gradient(135deg, #07111d, #101c2a 55%, #07111d) !important;
   border: 1px solid rgba(255, 255, 255, 0.09) !important;
-
   box-shadow:
     0 20px 55px rgba(0, 0, 0, 0.48),
     inset 0 1px 0 rgba(255,255,255,0.08) !important;
@@ -125,20 +123,20 @@
   align-items: center !important;
   justify-content: space-between !important;
   gap: 36px !important;
-  position: relative !important;
-  z-index: 2 !important;
 }
 
-/* Remove the big 24/7 text */
+/* Removed the big 24/7 background text */
+
 [data-mj="widget-info-panel"]::before {
-  display: none !important;
   content: none !important;
+  display: none !important;
 }
 
-/* Remove the green/blue overlay and background pattern */
+/* Removed green/blue overlay extensions */
+
 [data-mj="widget-info-panel"]::after {
-  display: none !important;
   content: none !important;
+  display: none !important;
 }
 
 [data-mj="widget-info-panel"] h1,
@@ -149,7 +147,9 @@
   font-size: 34px !important;
   font-weight: 900 !important;
   letter-spacing: -0.7px !important;
-  text-shadow: none !important;
+  text-shadow:
+    0 0 16px rgba(37, 211, 102, 0.45),
+    0 0 28px rgba(0, 174, 255, 0.18) !important;
 }
 
 [data-mj="widget-info-panel"] p,
@@ -164,9 +164,8 @@
   padding: 11px !important;
   border-radius: 20px !important;
   background: #ffffff !important;
-
   box-shadow:
     0 16px 40px rgba(0,0,0,0.45),
-    0 0 0 1px rgba(255,255,255,0.18) !important;
-
-
+    0 0 0 1px rgba(255,255,255,0.18),
+    0 0 34px rgba(37,211,102,0.32) !important;
+}
