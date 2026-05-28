@@ -53,51 +53,50 @@
 }
 
 
-/* AtlasBet24 Animated Neon Border Glow - Category Cards */
+/* AtlasBet24 Neon Border Glow - Inside Border Only */
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] {
   position: relative !important;
   border: 2px solid #00bfff !important;
   border-radius: 8px !important;
   overflow: hidden !important;
+
+  /* Inside glow only */
   box-shadow:
-    0 0 6px rgba(0, 191, 255, 0.9),
-    0 0 14px rgba(0, 191, 255, 0.7),
-    0 0 26px rgba(0, 191, 255, 0.45),
-    inset 0 0 10px rgba(0, 191, 255, 0.3) !important;
-  animation: atlasNeonPulse 1.8s infinite alternate ease-in-out !important;
+    inset 0 0 6px rgba(0, 191, 255, 0.95),
+    inset 0 0 12px rgba(0, 191, 255, 0.75),
+    inset 0 0 20px rgba(0, 191, 255, 0.45) !important;
+
+  animation: atlasNeonPulseInside 1.8s infinite alternate ease-in-out !important;
   transition: all 0.3s ease-in-out !important;
 }
 
-/* Category Card Hover Effect */
-
+/* Hover effect - no outside glow */
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover {
-  transform: translateY(-2px) scale(1.02) !important;
   border-color: #00eaff !important;
+  transform: translateY(-2px) scale(1.02) !important;
   box-shadow:
-    0 0 10px rgba(0, 234, 255, 1),
-    0 0 24px rgba(0, 234, 255, 0.9),
-    0 0 45px rgba(0, 234, 255, 0.65),
-    inset 0 0 16px rgba(0, 234, 255, 0.45) !important;
+    inset 0 0 8px rgba(0, 234, 255, 1),
+    inset 0 0 16px rgba(0, 234, 255, 0.85),
+    inset 0 0 26px rgba(0, 234, 255, 0.55) !important;
 }
 
-/* Category Card Neon Animation */
-
-@keyframes atlasNeonPulse {
+/* Inside neon pulse animation */
+@keyframes atlasNeonPulseInside {
   from {
+    border-color: #00bfff;
     box-shadow:
-      0 0 5px rgba(0, 191, 255, 0.7),
-      0 0 12px rgba(0, 191, 255, 0.55),
-      0 0 22px rgba(0, 191, 255, 0.35),
-      inset 0 0 8px rgba(0, 191, 255, 0.25);
+      inset 0 0 5px rgba(0, 191, 255, 0.75),
+      inset 0 0 10px rgba(0, 191, 255, 0.55),
+      inset 0 0 18px rgba(0, 191, 255, 0.35);
   }
 
   to {
+    border-color: #00eaff;
     box-shadow:
-      0 0 9px rgba(0, 234, 255, 1),
-      0 0 20px rgba(0, 234, 255, 0.85),
-      0 0 40px rgba(0, 234, 255, 0.6),
-      inset 0 0 14px rgba(0, 234, 255, 0.45);
+      inset 0 0 7px rgba(0, 234, 255, 1),
+      inset 0 0 14px rgba(0, 234, 255, 0.8),
+      inset 0 0 24px rgba(0, 234, 255, 0.5);
   }
 }
 
