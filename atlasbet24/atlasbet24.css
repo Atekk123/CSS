@@ -101,87 +101,60 @@
 }
 
 /* Test */
+/* Modern Whatsapp Support Section - Clean Version */
+
 [data-mj="widget-info-panel"] {
-  margin: 32px 16px 24px !important;
-  border-radius: 24px !important;
+  max-width: 1400px !important;
+  width: calc(100% - 32px) !important;
+  margin: 32px auto 24px !important;
+
+  border-radius: 18px !important;
   overflow: hidden !important;
   position: relative !important;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(0, 255, 170, 0.2), transparent 32%),
-    radial-gradient(circle at 90% 10%, rgba(0, 174, 255, 0.22), transparent 35%),
-    linear-gradient(135deg, #07111d, #101c2a 55%, #07111d) !important;
-  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+
+  background: linear-gradient(
+    135deg,
+    rgba(24, 33, 42, 0.98),
+    rgba(20, 29, 38, 0.98)
+  ) !important;
+
   box-shadow:
-    0 20px 55px rgba(0, 0, 0, 0.48),
-    inset 0 1px 0 rgba(255,255,255,0.08),
-    0 0 35px rgba(0, 255, 170, 0.12) !important;
+    0 14px 35px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
 }
 
-[data-mj="widget-info-panel"] [data-mj="widget-info-panel-content"] {
-  min-height: 190px !important;
-  padding: 36px 44px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 36px !important;
-}
+/* Remove green/blue glow extensions */
 
-[data-mj="widget-info-panel"]::before {
-  content: "24/7" !important;
-  position: absolute !important;
-  right: 190px !important;
-  top: 28px !important;
-  font-size: 82px !important;
-  font-weight: 900 !important;
-  color: rgba(255,255,255,0.045) !important;
-  letter-spacing: -4px !important;
-  pointer-events: none !important;
-}
-
+[data-mj="widget-info-panel"]::before,
 [data-mj="widget-info-panel"]::after {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background:
-    linear-gradient(90deg, rgba(37,211,102,0.12), transparent 35%, rgba(0,174,255,0.1)),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 24px,
-      rgba(255,255,255,0.018) 25px
-    ) !important;
-  pointer-events: none !important;
+  display: none !important;
+  content: none !important;
 }
 
-[data-mj="widget-info-panel"] h1,
-[data-mj="widget-info-panel"] h2,
-[data-mj="widget-info-panel"] h3,
-[data-mj="widget-info-panel"] strong {
-  color: #ffffff !important;
-  font-size: 34px !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.7px !important;
-  text-shadow:
-    0 0 16px rgba(37, 211, 102, 0.45),
-    0 0 28px rgba(0, 174, 255, 0.18) !important;
+/* Remove any big background text like 24/7 */
+
+[data-mj="widget-info-panel"] [class*="24"],
+[data-mj="widget-info-panel"] [class*="background"],
+[data-mj="widget-info-panel"] [class*="watermark"],
+[data-mj="widget-info-panel"] [class*="bg"] {
+  display: none !important;
 }
 
-[data-mj="widget-info-panel"] p,
-[data-mj="widget-info-panel"] span {
-  color: rgba(255, 255, 255, 0.74) !important;
-  font-size: 16px !important;
+/* Keep section content above background */
+
+[data-mj="widget-info-panel"] > * {
+  position: relative !important;
+  z-index: 2 !important;
 }
+
+/* Optional: make QR code clean without background watermark */
 
 [data-mj="widget-info-panel"] img {
-  width: 136px !important;
-  height: 136px !important;
-  padding: 11px !important;
-  border-radius: 20px !important;
-  background: #ffffff !important;
-  box-shadow:
-    0 16px 40px rgba(0,0,0,0.45),
-    0 0 0 1px rgba(255,255,255,0.18),
-    0 0 34px rgba(37,211,102,0.32) !important;
+  position: relative !important;
+  z-index: 3 !important;
+  border-radius: 14px !important;
 }
 
 
