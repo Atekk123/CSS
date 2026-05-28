@@ -53,7 +53,7 @@
 }
 
 
-/* AtlasBet24 Strong Animated Neon Background Glow - Category Cards */
+/* AtlasBet24 Outside Neon Border Glow Only - Category Cards */
 
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"] {
   position: relative !important;
@@ -62,69 +62,23 @@
   overflow: visible !important;
   z-index: 1 !important;
 
+  /* Outside glow only - no inside fill */
   box-shadow:
-    0 0 8px rgba(0, 191, 255, 0.95),
-    0 0 18px rgba(0, 191, 255, 0.8),
-    0 0 35px rgba(0, 191, 255, 0.6),
-    0 0 55px rgba(0, 191, 255, 0.35),
-    inset 0 0 10px rgba(0, 191, 255, 0.4) !important;
+    0 0 6px rgba(0, 191, 255, 0.85),
+    0 0 14px rgba(0, 191, 255, 0.65),
+    0 0 28px rgba(0, 191, 255, 0.45),
+    0 0 45px rgba(0, 191, 255, 0.28) !important;
 
-  animation: atlasNeonPulse 1.6s infinite alternate ease-in-out !important;
+  animation: atlasOutsideNeonPulse 1.8s infinite alternate ease-in-out !important;
   transition: all 0.3s ease-in-out !important;
 }
 
-/* Animated neon background glow behind the card */
+/* Make sure pseudo-elements do not fill the card */
 
-[data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]::before {
-  content: "" !important;
-  position: absolute !important;
-  top: -10px !important;
-  left: -10px !important;
-  right: -10px !important;
-  bottom: -10px !important;
-  border-radius: 12px !important;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(0, 234, 255, 0.45) 0%,
-      rgba(0, 191, 255, 0.28) 35%,
-      rgba(0, 191, 255, 0.12) 60%,
-      transparent 75%
-    ) !important;
-
-  filter: blur(14px) !important;
-  opacity: 0.75 !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
-
-  animation: atlasNeonBackgroundPulse 1.8s infinite alternate ease-in-out !important;
-}
-
-/* Optional animated shine line around the card */
-
+[data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]::before,
 [data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]::after {
-  content: "" !important;
-  position: absolute !important;
-  inset: -2px !important;
-  border-radius: 10px !important;
-  padding: 2px !important;
-
-  background: linear-gradient(
-    120deg,
-    #00bfff,
-    #00eaff,
-    #006eff,
-    #00eaff,
-    #00bfff
-  ) !important;
-
-  background-size: 300% 300% !important;
-  animation: atlasNeonBorderMove 3s linear infinite !important;
-
-  opacity: 0.75 !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
+  display: none !important;
+  content: none !important;
 }
 
 /* Category Card Hover Effect */
@@ -134,66 +88,28 @@
   border-color: #00eaff !important;
 
   box-shadow:
-    0 0 12px rgba(0, 234, 255, 1),
-    0 0 28px rgba(0, 234, 255, 0.95),
-    0 0 55px rgba(0, 234, 255, 0.75),
-    0 0 80px rgba(0, 234, 255, 0.45),
-    inset 0 0 18px rgba(0, 234, 255, 0.5) !important;
+    0 0 10px rgba(0, 234, 255, 1),
+    0 0 24px rgba(0, 234, 255, 0.9),
+    0 0 48px rgba(0, 234, 255, 0.65),
+    0 0 75px rgba(0, 234, 255, 0.42) !important;
 }
 
-[data-mj="widget-pages-grid"] [data-mj="widget-pages-item"]:hover::before {
-  opacity: 1 !important;
-  filter: blur(18px) !important;
-}
+/* Outside Neon Border Animation */
 
-/* Category Card Neon Border Pulse */
-
-@keyframes atlasNeonPulse {
+@keyframes atlasOutsideNeonPulse {
   from {
     box-shadow:
-      0 0 6px rgba(0, 191, 255, 0.75),
-      0 0 14px rgba(0, 191, 255, 0.55),
-      0 0 28px rgba(0, 191, 255, 0.35),
-      0 0 45px rgba(0, 191, 255, 0.22),
-      inset 0 0 8px rgba(0, 191, 255, 0.25);
+      0 0 5px rgba(0, 191, 255, 0.7),
+      0 0 12px rgba(0, 191, 255, 0.5),
+      0 0 24px rgba(0, 191, 255, 0.32),
+      0 0 38px rgba(0, 191, 255, 0.2);
   }
 
   to {
     box-shadow:
-      0 0 12px rgba(0, 234, 255, 1),
-      0 0 26px rgba(0, 234, 255, 0.85),
-      0 0 48px rgba(0, 234, 255, 0.65),
-      0 0 75px rgba(0, 234, 255, 0.4),
-      inset 0 0 16px rgba(0, 234, 255, 0.45);
-  }
-}
-
-/* Neon Background Breathing Animation */
-
-@keyframes atlasNeonBackgroundPulse {
-  from {
-    opacity: 0.45;
-    transform: scale(0.96);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1.06);
-  }
-}
-
-/* Moving Neon Border Gradient */
-
-@keyframes atlasNeonBorderMove {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
+      0 0 10px rgba(0, 234, 255, 1),
+      0 0 22px rgba(0, 234, 255, 0.8),
+      0 0 42px rgba(0, 234, 255, 0.58),
+      0 0 68px rgba(0, 234, 255, 0.35);
   }
 }
