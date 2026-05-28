@@ -199,3 +199,8 @@
   max-height: none !important;
 }
 }
+
+/* Move logo up to align with header buttons */
+[data-mj="logo"] img {
+  transform: translateY(-6px) !important;
+}
