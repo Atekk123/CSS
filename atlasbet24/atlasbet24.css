@@ -193,14 +193,9 @@
 
 /* AtlasBet Logo Size + Gold Glow */
 
-[data-mj="logo"] img {
+[data-mj="heder-left"] img {
   width: 145px !important;
   height: auto !important;
   max-height: none !important;
 }
-}
-
-[data-mj="header-left"] {
-  display: flex !important;
-  align-items: center !important;
 }
