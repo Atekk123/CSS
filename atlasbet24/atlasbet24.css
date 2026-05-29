@@ -198,21 +198,10 @@
   align-items: center !important;
 }
 
-[data-mj="header-left"] > div {
-  display: flex !important;
-  align-items: center !important;
-}
-
-[data-mj="header-left"] [data-mj="logo"] {
-  display: flex !important;
-  align-items: center !important;
-  height: 100% !important;
-}
-
-[data-mj="header-left"] [data-mj="logo"] img {
+[data-mj="header-left"] img {
   width: 145px !important;
   height: auto !important;
-  max-height: 40px !important;
+  max-height: 48px !important;
   object-fit: contain !important;
   display: block !important;
 }
