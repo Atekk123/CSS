@@ -202,18 +202,19 @@
 
 [data-mj="logo"] img {
   width: 145px !important;
+  max-width: none !important;
   height: auto !important;
   max-height: 48px !important;
   object-fit: contain !important;
   display: block !important;
 }
 
-
 /* AtlasBet Logo Size - Tablet / Phone */
 
 @media (max-width: 768px) {
   [data-mj="logo"] img {
     width: 125px !important;
+    max-width: none !important;
     max-height: 42px !important;
   }
 }
@@ -223,6 +224,7 @@
 @media (max-width: 480px) {
   [data-mj="logo"] img {
     width: 110px !important;
+    max-width: none !important;
     max-height: 38px !important;
   }
 }
