@@ -228,3 +228,37 @@
     max-height: 38px !important;
   }
 }
+
+/* Payment Methods Row - Footer Bottom */
+
+[data-mj="footer"]::after {
+  content: "" !important;
+  display: block !important;
+  width: 92% !important;
+  max-width: 680px !important;
+  height: 30px !important;
+  margin: 26px auto 8px !important;
+  padding-top: 22px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  background-image:
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/c043ec8d-aebb-4598-9fa3-5539bc7e9c4c"),
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/8189a5c3-2623-4eaa-88ac-ec7f53671bd1"),
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/e8cc39fb-b965-4d38-a39a-9c11ab1b6765"),
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/93d61fde-e9d7-49d3-a44a-855087713a59"),
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/3dd09c01-32c7-4ab0-920f-dd7d2a202d5e"),
+    url("https://atlasbet24.com/api/cmsgateway/api/v1/AssetTemplateSite/fa9510d2-9a5e-4543-ad08-692072ebd4c0") !important;
+
+  background-repeat: no-repeat !important;
+  background-position:
+    0% center, 20% center, 40% center, 60% center, 80% center, 100% center !important;
+  background-size:
+    15.2% auto, 13.9% auto, 16.2% auto, 12.7% auto, 14.7% auto, 12.2% auto !important;
+
+  opacity: 0.9 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+[data-mj="footer"]:hover::after {
+  opacity: 1 !important;
+}
