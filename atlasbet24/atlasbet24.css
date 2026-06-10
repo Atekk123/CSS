@@ -263,3 +263,12 @@
   background-color: rgba(255, 255, 255, 0.07) !important;
   border-color: rgba(255, 255, 255, 0.14) !important;
 }
+
+/* Payment Row - Larger on Desktop */
+
+@media (min-width: 1024px) {
+  [data-mj="footer"]::after {
+    max-width: 760px !important;
+    height: 66px !important;
+  }
+}
