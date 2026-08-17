@@ -278,20 +278,5 @@
     height: 66px !important;
   }
 }
-
-[data-mj="footer-bottom"] {
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-}
-
-[data-mj="footer-bottom"]::before {
-  content: "www.atlasbet24.com is owned and operated by Evora LTD, registration number: 000054743, registered address: San Victor Street, Orange Walk Town, Belize. Contact us at support@atlasbet24.com\A www.atlasbet24.com is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License ALSI-202602019-FI1.\A www.atlasbet24.com has passed all regulatory compliance and is legally authorised to conduct gaming operations for any and all games of chance and wagering." !important;
-  white-space: pre-line !important;
-  color: rgba(255, 255, 255, 0.55) !important;
-  font-size: 12px !important;
-  line-height: 1.6 !important;
-  display: block !important;
-  width: 100% !important;
   order: -1 !important;
 }
